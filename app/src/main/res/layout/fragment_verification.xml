@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation_bar.VerificationFragment"
+    android:background="#f9c0c8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewCamera"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:id="@+id/textViewCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show us Your Prescription"
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:textColor="#ff7bac"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTNCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:backgroundTint="#da2f7c"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/BTNSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#da2f7c"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

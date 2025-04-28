@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation_bar.HomeFragment"
+    android:background="#f9c0c8">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/BTNshop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/gmp_ref_palette_neutral_transparent"
+                    android:drawableTop="@drawable/shopping_cart_logo_home_fragment"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#f190b3"
+                    />
+
+                <SearchView
+                    android:id="@+id/search_bar_main_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/search_bar_background" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/user_balance_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_balance_background">
+
+                <TextView
+                    android:id="@+id/text_view_cash_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31,105"
+                    android:textColor="@color/white"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:drawableStart="@drawable/wallet_logo_user_balance" />
+
+                <TextView
+                    android:id="@+id/text_view_points_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="12,304"
+                    android:textColor="@color/white"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:drawableStart="@drawable/stars_logo_user_balance" />
+            </LinearLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/upperNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"
+                app:itemIconTint="@color/upper_navigation_bar_color"
+                app:itemTextColor="@color/upper_navigation_bar_color"
+                app:itemBackground="@android:color/transparent"
+                app:backgroundTint="#f190b3"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/upper_navigation_menu" />
+
+            <LinearLayout
+                android:id="@+id/map_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:background="@drawable/map_image_background_shape"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/drugstore_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drugstores near you"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:fontFamily="cursive"
+                        android:textSize="20sp"
+                        android:background="@drawable/drugstores_background_shape"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp" />
+
+                    <ImageView
+                        android:id="@+id/red_arrow"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/arrow_logo_drugstore"
+                        android:rotation="-5" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="12dp">
+
+                    <fragment
+                        android:id="@+id/id_map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_text_advertisements"
+                android:textColor="#2b2d30"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="40dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_marginBottom="60dp">
+
+                    <ImageView
+                        android:id="@+id/ads1"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ads1" />
+
+                    <ImageView
+                        android:id="@+id/ads2"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ads2" />
+
+                    <ImageView
+                        android:id="@+id/ads3"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ads3" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+</FrameLayout>

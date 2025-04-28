@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PharmaSwift</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_text_transaction">Transaction</string>
+    <string name="string_text_home">Home</string>
+    <string name="string_text_profile">Profile</string>
+    <string name="text_string_more">More</string>
+    <string name="string_text_earn_points">Earn Points</string>
+    <string name="string_text_call_a_pharmacist">Call a Pharmacist</string>
+    <string name="string_text_medicine">Medicine</string>
+    <string name="string_text_advertisements">Advertisements</string>
 </resources>

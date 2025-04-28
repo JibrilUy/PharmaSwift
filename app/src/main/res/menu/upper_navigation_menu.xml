@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/medicine_logo_upper_navigation_bar"
+        android:title="@string/string_text_medicine"
+        android:icon="@drawable/medicine_logo_navigation_bar_main_activity"/>
+    <item
+        android:id="@+id/phone_logo_upper_navigation_bar"
+        android:title="@string/string_text_call_a_pharmacist"
+        android:icon="@drawable/phone_logo_navigation_bar_main_activity"/>
+    <item
+        android:id="@+id/puzzles_logo_upper_navigation_bar"
+        android:title="@string/string_text_earn_points"
+        android:icon="@drawable/puzzle_logo_navigation_bar_main_activity"/>
+    <item
+        android:id="@+id/more_logo_upper_navigation_bar"
+        android:title="@string/text_string_more"
+        android:icon="@drawable/dots_logo_navigation_bar_main_activity"/>
+</menu>
